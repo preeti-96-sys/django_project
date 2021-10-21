@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Order delete</title>
+
+	<style>
+		input{
+			height: 50px;
+			width: 200px;
+			font-size: 20px;
+			font-family: cursive;
+		}
+		h1{
+			font-family: cursive;
+			font-size: 24px;
+		}
+		a{
+			font-size: 20px;
+		}
+		body{
+			background-color: AntiqueWhite;
+		}
+	</style>
+</head>
+
+
+
+<body>
+<div class='main'>
+	<form method='POST'>
+		{% csrf_token %}
+<h1>
+		Order arrived??
+		</h1>
+	
+<h1>	Then Delete from the table...
+	</h1>
+		<br>
+		<input type='submit' value="Delete"/>
+		<br>
+		<br>
+		<br>
+		<a href='/show_order'> Cancel </a>
+	</form>
+</div>
+</body>
+</html>
+
+
+
+
+

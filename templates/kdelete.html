@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>delete page</title>
+	<style>
+		h1{
+			font-family: cursive;
+			
+		}
+		h2{
+			font-family: cursive;
+		}
+		input{
+			height: 50px;
+			width: 200px;
+			font-size: 20px;
+			font-family: cursive;
+		}
+		a{
+			font-size: 20px;
+		}
+		body{
+			background-color: AntiqueWhite;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="main">
+	<form method="POST">
+		{% csrf_token %}
+		<h1>Is this item Out of Stock in the store?? If Yes, DELETE</h1>
+		<h2>Once you delete, you will be redirected to another page to place the list of orders...
+		
+			<br>
+		ORDER the deleted product; so that you don't remain Out of Stock for longer time</h2>
+
+		<input type="submit" value="Delete and Order">
+
+
+		<h2>Don't want to delete item??? Press Cancel</h2>
+
+		<a href="/kitchen">Cancel</a>
+	</form>
+</div>
+</body>
+</html>
+<!-- delete,yes then go to (add) to-order type name explicitly it wil go and sit on to-order table and if u want to show, then display to-order page-->

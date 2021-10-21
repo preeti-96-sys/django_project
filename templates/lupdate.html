@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>update loyal customers</title>
+	{% load static %}
+	{% csrf_token %}
+<style>
+body{
+	background-color:AntiqueWhite;
+}
+h1{
+	font-size: 40px;
+}
+form{
+	font-size: 25px;
+}
+input{
+	font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+	<h1>Update information of loyal customers</h1>
+	<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+
+		<input type="submit" name="Update Customer visit date">
+	</form>
+</div>
+</body>
+</html>

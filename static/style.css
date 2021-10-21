@@ -1,0 +1,29 @@
+table{
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+th{
+	width: 100px;
+	height: 15px;
+	border: 1px solid black;
+	font-family: Comic Sans MS;
+	background-color: lightskyblue;
+	color: brown;
+}
+td{
+	width: 100px;
+	height: 10px;
+	border: 1px solid black;
+	font-family: cursive;
+	background-color: #E6E6FA;
+	color: purple;
+}
+
+#bgh{
+		background-repeat: no-repeat;
+		background-size: 400px 300px;
+		background-attachment: fixed;
+		background-position: left bottom;
+		background-color: white;
+	}

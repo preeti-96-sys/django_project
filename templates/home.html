@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	{% load static %}
+	{% csrf_token %}
+
+	<link href="{% static 'style.css' %}" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+
+	<style>
+	h1,h2,h4{
+		text-align: center;
+		color: brown;
+	}
+	
+	nav{
+			background-color: white;
+  		color: black;
+  		padding: 15px 25px;
+  		text-decoration: none;
+  		font-size: 20px;
+  		}
+
+.shine{
+    width:235px ;
+    height:250px;
+    margin-left: 0px;
+    border-radius: 10%;
+}
+.shine:hover{
+    color: #111; 
+    background: greenyellow; 
+    box-shadow: 0 0 100px greenyellow; 
+}
+
+</style>
+
+</head>
+<body id="bgh">
+<!--
+	<h1><b>TOP-in-TOWN</b></h1>
+	<h2>Absolute choice for all your daily requirements</h2>-->
+	<br>
+	<br>
+
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><img src='{% static "t1.jpg" %}' height="42" width="185"></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li class="active"><a href="#">Home</a></li>
+      	<li><a href="about">About</a></li>
+      	<li class="nav-item dropdown">
+      		
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Categories</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="kitchen">Kitchenware</a><br>
+    				<a class="dropdown-item" href="beauty">Beauty Products</a><br>
+    				<a class="dropdown-item" href="stationery">Stationery Products</a><br>
+    				<a class="dropdown-item" href="homecare">Home Care Products</a><br>
+    				<a class="dropdown-item" href="food">Food Products</a><br>
+    		<li><a href="show_cust">Loyalty Customers</a></li>
+     		<li><a href="offer_pg">Offers</a></li>
+      	<li><a href="staff_pg">Staff</a></li>
+      	<li><a href="to_order">Place Order</a></li>	<!--<li><a href="show_order">To order table</a></li>-->
+      	<li><a href="contact">Contact</a></li>
+      	<li><a href="/">Logout</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<br>
+<br>
+
+<!-- grids for offers displaying -->
+<div class="container">
+<div class="row">
+		<div class="col-md-3"><a href="offer_pg"><img class="shine" src={% static 'o1.jpg' %}>Exciting offers on beauty products<br>Limited Stocks!!</a></div>
+
+		<div class="col-md-3"><a href="offer_pg"><img class="shine" src={% static 'o3.jpg' %}>Best Deals on Chocolates and Biscuits<br></a></div>
+
+		<div class="col-md-3"><a href="offer_pg"><img class="shine" src={% static 'o5.jpg' %}><br>Gift set of stainless steel kitchenware</a></div>
+
+		<div class="col-md-3"><a href="offer_pg"><img class="shine" src={% static 'o4.jpg' %}>Upto 30% off on essential home care products</a></div>
+
+		
+</div>
+</div>
+<br>
+<br>
+<!-- <img class='thumbnail' src="{% static 'b4.jpg' %}">  -->
+<marquee scrollamount="7">
+	<img src={% static 'cart1.jpg' %} width="300" height="300">
+	<img src={% static 'all2.jpg' %} width="300" height="300">
+	<img src={% static 'off3.jpg' %} width="300" height="300">
+	<img src={% static 'bs2.jpg' %} width="300" height="300">
+	<img src={% static 'hs3.jpg' %} width="300" height="300">
+</marquee>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
+

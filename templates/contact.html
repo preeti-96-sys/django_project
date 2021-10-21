@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>contact</title> 
+	{% load static %}
+
+<!--Bootstrap-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+<style>
+	body{
+			color: white;
+			background-image: url('{% static "cont1.jpg" %}');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		nav{
+			background-color: white;
+  			color: black;
+  			padding: 15px 25px;
+  			text-decoration: none;
+  			font-size: 20px;
+  		}
+	</style>
+</head>
+<body>
+
+	<br>
+	<br>
+
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><img src='{% static "t1.jpg" %}' height="45" width="180"></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li class="active"><a href="home">Home</a></li>
+      	<li><a href="about">About</a></li>
+      	<li class="nav-item dropdown">
+      		
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Categories</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="kitchen">Kitchenware</a><br>
+    				<a class="dropdown-item" href="beauty">Beauty Products</a><br>
+    				<a class="dropdown-item" href="stationery">Stationery Products</a><br>
+    				<a class="dropdown-item" href="homecare">Home Care Products</a><br>
+    				<a class="dropdown-item" href="food">Food Products</a><br>
+    		<li><a href="show_cust">Loyalty Customers</a></li>
+     		<li><a href="offer_pg">Offers</a></li>
+      	<li><a href="staff_pg">Staff</a></li>
+      	<li><a href="to_order">Place Order</a></li>	<!--<li><a href="show_order">To order table</a></li>-->
+      	<li><a href="contact">Contact</a></li>
+      	<li><a href="/">Logout</a></li>
+
+    </ul>
+  </div>
+</nav>
+	<h1>Address:</h1>
+		<h2>Street No. 0, Some Random street, xyz Main,
+		<br> Next Cross, Near abcd school, City road, City, <br>
+		Pin code-123 123</h2>
+
+
+<h2>Contact No.: 9876543210</h2>
+<h2>Email: store@email.com</h2>
+</body>
+</html>
